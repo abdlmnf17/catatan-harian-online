@@ -1,0 +1,155 @@
+/* Global styles */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+/* Box container styling */
+.box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: justify;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 500;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.table tr:hover {
+  background-color: #e2e2e2;
+}
+
+.table .tableborder {
+  border: 2px dashed #ddd;
+}
+
+input[type="text"] {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: cornflowerblue;
+  color: rgb(249, 249, 250);
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For devices with width up to 600px */
+@media (max-width: 600px) {
+  .box {
+    padding: 15px;
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .table th, .table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* For devices with width up to 400px */
+@media (max-width: 400px) {
+  header, footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .table th, .table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  input[type="text"] {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

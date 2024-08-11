@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="note-online - Buat catatan secara online" />
+    <meta name="keywords" content="Buat catatanmu secara online, hapus dan kontrol catatan kamu" />
+    <title>NOTE-ONLINE | Create & Share</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>NOTE-ONLINE</h2>
+      <p>Sebuah web untuk menyimpan keperluan catatan kamu</p>
+    </header>
+
+    <div class="box">
+      <h1>Daftar Catatan </h1>
+      <br />
+      <input type="text" id="inputNamaJudul" placeholder="Masukkan Judul Catatan Kamu....">
+      <input type="text" id="inputKategori" placeholder="Masukkan kategori catatan kamu.....">
+      <input type="text" id="inputCatatan" placeholder="Tuliskan catatan kamu......">
+      <button onclick="btnTambah()">Tambah Data</button>
+      <br /><br />
+
+      <table class="table" border="tableBorder" id="outputData">
+        <thead>
+          <tr>
+            <th>Judul</th>
+            <th>Kategori</th>
+            <th>Catatan</th>
+            <th>Opsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+          </tr>
+        </tbody>
+      </table>
+
+      <button onclick="hapusSemua()">Hapus Semua Data</button>
+    </div>
+
+    <footer>
+      <h4>Web  ini dibuat oleh <a href="https://abdulmanap.com">Abdul Manap</a></h4>
+    </footer>
+  </body>
+  <script src="/assets/index.js"></script>
+</html>
